@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha's Blog | Insights & Reviews</title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Style switcher css -->
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="style-switcher.css">
+    
+    <style>
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .blog-post {
+            background: var(--bg-black-100);
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border: 1px solid var(--bg-black-50);
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .blog-title {
+            color: var(--text-black-900);
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .blog-meta {
+            color: var(--text-black-700);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .blog-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 3px solid var(--skin-color);
+        }
+        
+        .blog-content h2 {
+            color: var(--skin-color);
+            margin: 30px 0 15px;
+            font-size: 24px;
+        }
+        
+        .blog-content p {
+            color: var(--text-black-700);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .blog-content blockquote {
+            border-left: 4px solid var(--skin-color);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            color: var(--text-black-900);
+            background: var(--bg-black-50);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .blog-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--bg-black-50);
+        }
+        
+        .back-to-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .highlight-box {
+            background: var(--bg-black-50);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid var(--skin-color);
+        }
+        
+        .key-takeaways {
+            background: var(--bg-black-100);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+            border: 2px solid var(--skin-color);
+        }
+        
+        .key-takeaways h3 {
+            color: var(--skin-color);
+            margin-bottom: 20px;
+        }
+        
+        .key-takeaways ul {
+            list-style-type: none;
+        }
+        
+        .key-takeaways li {
+            color: var(--text-black-700);
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .key-takeaways li:before {
+            content: "✓";
+            color: var(--skin-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container starts -->
+    <div class="main-container">
+        <!-- side-bar starts -->
+        <div class="aside">
+            <div class="logo">
+                <a href="index.html"><span>H</span>arsha</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="index.html#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="index.html#services"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="index.html#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>    
+                <li><a href="blogs.html" class="active"><i class="fa fa-blog"></i> My Blogs</a></li>
+                <li><a href="index.html#contact"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- side-bar ends -->
+
+        <!-- Main-content starts -->
+        <div class="main-content">
+            <!-- Blog Content Section -->
+            <section class="blog-section section">
+                <div class="blog-container">
+                    <!-- Blog Header -->
+                    <div class="blog-header">
+                        <h1 class="blog-title">Book Review: Atomic Habits</h1>
+                        <div class="blog-meta">
+                            <span><i class="fa fa-calendar"></i>  MAY 2025</span> | 
+                            <span><i class="fa fa-user"></i>  Venkata Sri Harsha Vadlamudi</span> | 
+                            <span><i class="fa fa-tag"></i>  Self-Improvement, Productivity</span>
+                        </div>
+                    </div>
+
+                    <!-- Blog Image -->
+                    <img src="atomic-habits-cover.jpg" alt="Atomic Habits Book Cover" class="blog-image">
+
+                    <!-- Blog Content -->
+                    <div class="blog-content">
+                        <div class="highlight-box">
+                            <p>"You do not rise to the level of your goals. You fall to the level of your systems." - James Clear</p>
+                        </div>
+
+                        <h2>Introduction</h2>
+                        <p>James Clear's "Atomic Habits" isn't just another self-help book—it's a practical guide to understanding how small, consistent changes can lead to extraordinary results. As someone passionate about process optimization and continuous improvement in both personal and professional spheres, this book resonated deeply with my approach to operations management and personal development.</p>
+
+                        <h2>The Core Philosophy</h2>
+                        <p>The book's central premise is beautifully simple yet profound: <strong>tiny changes, remarkable results</strong>. Clear argues that we often overestimate the importance of single actions and underestimate the power of small, consistent improvements. This mirrors my experience in supply chain optimization where incremental process improvements (like reducing packing time by seconds) compound into significant efficiency gains over time.</p>
+
+                        <blockquote>
+                            "Habits are the compound interest of self-improvement. Getting 1% better every day counts for a lot in the long-run."
+                        </blockquote>
+
+                        <h2>Key Principles That Transformed My Approach</h2>
+                        
+                        <div class="key-takeaways">
+                            <h3><i class="fa fa-lightbulb"></i> My Key Takeaways</h3>
+                            <ul>
+                                <li><strong>The 1% Rule:</strong> Small improvements compound into remarkable results, much like how optimizing individual supply chain components enhances overall operational efficiency.</li>
+                                <li><strong>Identity-Based Habits:</strong> Focus on becoming the type of person who achieves goals, not just on the goals themselves—a principle I apply in team leadership.</li>
+                                <li><strong>The Four Laws of Behavior Change:</strong> Make it obvious, attractive, easy, and satisfying—a framework applicable to both personal habits and business process improvements.</li>
+                                <li><strong>Habit Stacking:</strong> Linking new habits to existing ones creates powerful routines, similar to how I implement new operational procedures within established workflows.</li>
+                                <li><strong>Environment Design:</strong> Optimizing your surroundings makes good habits inevitable and bad habits difficult—conceptually similar to workplace optimization for efficiency.</li>
+                            </ul>
+                        </div>
+
+                        <h2>Application in Professional Life</h2>
+                        <p>In my role as Operations Executive, I've applied Clear's principles to:</p>
+                        <p><strong>Process Optimization:</strong> Breaking down large efficiency goals into small, daily improvements led to a 66% reduction in shrinkage at Reliance Retail—exactly the "atomic" approach Clear advocates.</p>
+                        <p><strong>Team Development:</strong> Implementing "habit stacking" in training programs helped team members integrate new procedures seamlessly with existing workflows, improving packing efficiency from 500 to 700 units per packer.</p>
+                        <p><strong>Continuous Improvement:</strong> Adopting the "1% better every day" mentality across operations created a culture of incremental excellence that compounded into significant cost savings and quality improvements.</p>
+
+                        <h2>Personal Impact</h2>
+                        <p>Beyond professional applications, "Atomic Habits" transformed my personal routine. The concept of <strong>habit tracking</strong> helped me maintain consistency in my MBA studies, while <strong>environment design</strong> principles improved my daily productivity. The book's emphasis on systems over goals has reshaped how I approach both personal development and professional projects.</p>
+
+                        <h2>Critical Analysis</h2>
+                        <p>While immensely practical, the book could delve deeper into handling setbacks—a crucial aspect of habit formation. In operations management, we account for variability; similarly, habit formation needs robust contingency planning. Additionally, Clear's focus on individual habits could be expanded to organizational habit formation—a concept highly relevant to corporate culture development.</p>
+
+                        <div class="highlight-box">
+                            <h3><i class="fa fa-star"></i> Final Verdict</h3>
+                            <p><strong>Rating: 4.8/5</strong></p>
+                            <p>"Atomic Habits" is essential reading for anyone seeking sustainable improvement. Its principles align perfectly with operations management philosophies and provide a actionable framework for personal growth. The book's strength lies in its practicality—every principle can be immediately applied, whether you're optimizing supply chains or building better daily routines.</p>
+                        </div>
+
+                        <h2>Conclusion</h2>
+                        <p>James Clear has created more than a book—he's provided a operating system for personal and professional improvement. As I continue my MBA journey and professional development, the principles from "Atomic Habits" serve as a constant reminder that greatness comes not from dramatic transformations, but from the compound effect of small, daily disciplines. This aligns perfectly with my belief in continuous process improvement and data-driven optimization in all aspects of life.</p>
+
+                        <div class="blog-navigation">
+                            <a href="index.html#portfolio" class="btn"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+                            <a href="index.html#contact" class="btn">Discuss This Review <i class="fa fa-comments"></i></a>
+                        </div>
+
+                        <div class="back-to-home">
+                            <a href="index.html" class="btn"><i class="fa fa-home"></i> Back to Homepage</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <!-- Main-content ends -->
+         
+    </div>
+    <!-- Main container ends -->
+
+    <!-- Style-Switcher Starts -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style-Switcher Ends -->
+
+    <!-- JS FILES -->
+    <script src="script.js"></script>
+    <script src="style-switcher.js"></script>
+</body>
+</html>
