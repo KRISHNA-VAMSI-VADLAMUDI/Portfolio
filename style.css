@@ -1243,7 +1243,7 @@ h3.my-profession
 /* Media Queries */
 /* ================================================================================================ */
 
-@media (max-width:1199px)
+/*@media (max-width:1199px)
 {
     .aside
     {
@@ -1321,5 +1321,360 @@ h3.my-profession
     {
         display: inline-block;
         margin-left: auto;
+    }
+} */
+ /* ================================================================================================ */
+/* Enhanced Media Queries & Hamburger Menu */
+/* ================================================================================================ */
+
+/* Show hamburger menu on mobile */
+.aside .nav-toggler {
+    display: flex;
+    z-index: 1000;
+}
+
+/* Mobile Styles - Up to 991px */
+@media (max-width: 991px) {
+    .aside {
+        left: -270px;
+        width: 270px;
+    }
+    
+    .aside.open {
+        left: 0;
+    }
+    
+    .main-content {
+        padding-left: 0;
+    }
+    
+    .home .home-info,
+    .home .home-img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .home .home-img {
+        margin-top: 30px;
+        order: -1;
+    }
+    
+    .home-img::before,
+    .home-img::after {
+        display: none;
+    }
+    
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .blogs-preview .blog-preview-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .nav-toggler {
+        left: 20px !important;
+    }
+}
+
+/* Tablet Styles - 768px to 991px */
+@media (max-width: 991px) and (min-width: 768px) {
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Mobile Styles - Up to 767px */
+@media (max-width: 767px) {
+    .section {
+        padding: 0 15px;
+    }
+    
+    .section .container {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    
+    .section-title h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .section-title h2::before,
+    .section-title h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .portfolio .portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info,
+    .blogs-preview .blog-preview-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    h3.hello {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    h3.my-profession {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .home-info p {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .about .about-content .timeline {
+        padding: 20px 10px;
+    }
+    
+    .portfolio .portfolio-item-inner .portfolio-img img {
+        height: auto;
+        min-height: 200px;
+    }
+    
+    .portfolio .portfolio-item-inner .portfolio-img:hover img {
+        height: auto;
+    }
+    
+    /* Overlay for mobile menu */
+    .aside {
+        background: var(--bg-black-100);
+        z-index: 999;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .aside.open ~ .main-content::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: block;
+    }
+    
+    /* Adjust blog preview for mobile */
+    .blogs-preview .blog-img {
+        height: 200px;
+    }
+    
+    .blogs-preview .blog-content h3 {
+        min-height: auto;
+        font-size: 18px;
+    }
+    
+    /* Footer adjustments for mobile */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-left {
+        align-items: center;
+    }
+    
+    .footer-middle h4::after,
+    .footer-right h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-links a {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Styles - Up to 480px */
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+    
+    h3.hello {
+        font-size: 22px;
+    }
+    
+    h3.my-profession {
+        font-size: 24px;
+    }
+    
+    .home-info p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    
+    .about .about-content .timeline .timeline-title {
+        font-size: 16px;
+    }
+    
+    .about .about-content .timeline .timeline-text {
+        font-size: 14px;
+    }
+    
+    .service .service-item .service-item-inner {
+        padding: 20px 10px;
+    }
+    
+    .service .service-item .service-item-inner h4 {
+        font-size: 16px;
+    }
+    
+    .service .service-item .service-item-inner p {
+        font-size: 14px;
+    }
+    
+    .contact .contact-info-item {
+        margin-bottom: 30px;
+    }
+    
+    .contact .contact-form .form-control {
+        padding: 10px 15px;
+    }
+    
+    .contact .contact-form .btn {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .portfolio .portfolio-heading h2 {
+        font-size: 20px;
+    }
+    
+    .conatct-title {
+        font-size: 22px;
+    }
+    
+    .conatct-sub-title {
+        font-size: 14px;
+    }
+}
+
+/* Very Small Mobile Styles - Up to 320px */
+@media (max-width: 320px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+    
+    .home .home-img img {
+        height: 300px;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .about .about-content .personal-info .info-item p {
+        font-size: 14px;
+    }
+    
+    .portfolio .portfolio-item-inner .portfolio-img img {
+        min-height: 150px;
+    }
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Add to the end of your style.css file */
+
+/* Active state for nav links */
+.aside .nav li a.active {
+    color: var(--skin-color);
+    font-weight: 700;
+    border-bottom: 2px solid var(--skin-color);
+}
+
+/* Hamburger menu animation */
+.aside .nav-toggler.active span {
+    background: transparent;
+}
+
+.aside .nav-toggler.active span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.aside .nav-toggler.active span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Mobile menu overlay */
+.main-content::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.aside.open ~ .main-content::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive adjustments for nav toggler position */
+@media (max-width: 991px) {
+    .aside .nav-toggler {
+        position: fixed;
+        left: 20px;
+        top: 20px;
+        z-index: 1001;
+        background: var(--skin-color);
+        border-color: var(--skin-color);
+    }
+    
+    .aside .nav-toggler span,
+    .aside .nav-toggler span::before,
+    .aside .nav-toggler span::after {
+        background: white;
+    }
+    
+    .aside .nav-toggler.active {
+        left: calc(270px + 20px);
+    }
+}
+
+/* Adjust padding for sections when menu is open on mobile */
+@media (max-width: 991px) {
+    .aside.open ~ .main-content {
+        transform: translateX(270px);
     }
 }
